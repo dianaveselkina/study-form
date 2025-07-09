@@ -1,0 +1,18 @@
+.btn {
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.circle {
+  background-color: rgb(244, 193, 248);
+}
+.square {
+  background-color: rgb(245, 155, 252);
+}
+.triangle {
+  background-color: rgb(241, 122, 250);
+}
+.other {
+  background-color: rgb(93, 82, 250);
+}

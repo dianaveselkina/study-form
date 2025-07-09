@@ -11,3 +11,8 @@
   border-radius: 1rem;
   padding: 10px;
 }
+.block-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

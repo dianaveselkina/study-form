@@ -1,0 +1,7 @@
+.random {
+  width: 60vw;
+  height: 30vh;
+  border-radius: 1rem;
+  border: solid 0.3rem rgb(245, 179, 250);
+  background-color: aliceblue;
+}

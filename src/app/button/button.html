@@ -1,0 +1,9 @@
+<button [ngClass]="['btn', buttonClass]">
+  <img
+    *ngIf="iconPath"
+    [src]="iconPath"
+    alt="Icon"
+    style="width: 2rem; height: 2rem"
+  />
+  {{ label }}
+</button>
