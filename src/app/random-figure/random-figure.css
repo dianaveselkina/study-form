@@ -1,7 +1,15 @@
 .random {
-  width: 60vw;
+  width: 40vw;
   height: 30vh;
   border-radius: 1rem;
   border: solid 0.3rem rgb(245, 179, 250);
   background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.figure-size {
+  width: 8rem;
+  height: 8rem;
 }
