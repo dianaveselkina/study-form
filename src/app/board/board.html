@@ -1,6 +1,7 @@
-<div class="container">
+<div *ngIf="showBoard" class="container">
   <app-random-figure
     (figureChanged)="handleFigureChange($event)"
+    (finished)="handleFinished()"
   ></app-random-figure>
   <app-counter [counter]="counter"></app-counter>
   <div class="block-btn">
@@ -25,4 +26,10 @@
     label="Прочие фигуры"
     (click)="handleButtonClick('other')"
   ></app-button>
+</div>
+<div *ngIf="showFinalResult" class="overlay">
+  <div class="result-box">
+    <p>Вы набрали {{ counter }} очков</p>
+    <button (click)="closeResult()">Закрыть</button>
+  </div>
 </div>

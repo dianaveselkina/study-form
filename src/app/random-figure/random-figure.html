@@ -1,3 +1,9 @@
 <div class="random" *ngIf="currentImage">
   <img [src]="currentImage.src" [ngClass]="currentImage.class" alt="picture" />
 </div>
+<div *ngIf="showResult" class="overlay">
+  <div class="result-box">
+    <p>Вы набрали {{ counter }} очков</p>
+    <button (click)="closeOverlay()">Закрыть</button>
+  </div>
+</div>
