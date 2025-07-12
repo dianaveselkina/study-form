@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-button',
@@ -7,7 +7,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.css',
 })
 export class Button {
-  @Input() buttonClass: string = '';
-  @Input() label: string = '';
-  @Input() iconPath: string = '';
+  @Input() buttonClass!: string;
+  @Input() iconPath?: string;
+  @Input() label?: string;
+
+  @Output() click = new EventEmitter<string>();
+
+  handleClick() {
+    this.click.emit(this.buttonClass);
+  }
 }
