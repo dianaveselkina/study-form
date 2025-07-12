@@ -1,13 +1,28 @@
 <div class="container">
-  <app-random-figure></app-random-figure>
-  <app-counter></app-counter>
+  <app-random-figure
+    (figureChanged)="handleFigureChange($event)"
+  ></app-random-figure>
+  <app-counter [counter]="counter"></app-counter>
   <div class="block-btn">
-    <app-button buttonClass="circle" iconPath="assets/circle.png"></app-button>
-    <app-button buttonClass="square" iconPath="assets/square.png"></app-button>
+    <app-button
+      buttonClass="circle"
+      iconPath="assets/circle.png"
+      (click)="handleButtonClick('circle')"
+    ></app-button>
+    <app-button
+      buttonClass="square"
+      iconPath="assets/square.png"
+      (click)="handleButtonClick('square')"
+    ></app-button>
     <app-button
       buttonClass="triangle"
       iconPath="assets/triangle.png"
+      (click)="handleButtonClick('triangle')"
     ></app-button>
-    <app-button buttonClass="other" label="Прочие"> </app-button>
   </div>
+  <app-button
+    buttonClass="other"
+    label="Прочие фигуры"
+    (click)="handleButtonClick('other')"
+  ></app-button>
 </div>

@@ -9,4 +9,19 @@ import { Counter } from '../counter/counter';
   templateUrl: './board.html',
   styleUrl: './board.css',
 })
-export class Board {}
+export class Board {
+  counter: number = 0;
+  currentFigureClass: string = '';
+
+  handleFigureChange(className: string) {
+    this.currentFigureClass = className;
+  }
+
+  handleButtonClick(buttonClass: string) {
+    if (this.currentFigureClass.includes(buttonClass)) {
+      this.counter++;
+    } else {
+      this.counter--;
+    }
+  }
+}

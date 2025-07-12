@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './counter.css',
 })
 export class Counter {
-  @Input() count!: number;
+  @Input() counter!: number;
 }
