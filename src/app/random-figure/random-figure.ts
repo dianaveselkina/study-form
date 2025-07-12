@@ -40,7 +40,7 @@ export class RandomFigure implements OnInit, OnDestroy {
   intervalId: any;
 
   showCount = 0;
-  maxShows = 30;
+  maxShows = 4;
   showResult = false;
   counter = 0;
 

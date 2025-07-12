@@ -29,7 +29,11 @@
 </div>
 <div *ngIf="showFinalResult" class="overlay">
   <div class="result-box">
-    <p>Вы набрали {{ counter }} очков</p>
+    <p>Ваш счет:</p>
+    <p class="counter-number">
+      <strong>{{ counter }}</strong>
+    </p>
+
     <button (click)="closeResult()">Закрыть</button>
   </div>
 </div>

@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+  padding: 1rem;
+}
 .container {
   position: relative;
   margin: 2rem auto;
@@ -15,4 +19,27 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+.overlay {
+  position: relative;
+  margin: 16rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgb(241, 122, 250);
+  width: 20rem;
+  height: 30vh;
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+.result-box {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.counter-number {
+  font-size: 3rem;
 }
